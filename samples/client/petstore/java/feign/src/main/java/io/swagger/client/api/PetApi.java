@@ -37,7 +37,7 @@ public interface PetApi extends ApiClient.Api {
    */
   @RequestLine("DELETE /pet/{petId}")
   @Headers({
-    "Content-Type: application/json",
+    "Content-Type: ",
     "Accept: application/json",
     "api_key: {apiKey}"
   })
@@ -51,7 +51,7 @@ public interface PetApi extends ApiClient.Api {
    */
   @RequestLine("GET /pet/findByStatus?status={status}")
   @Headers({
-    "Content-Type: application/json",
+    "Content-Type: ",
     "Accept: application/json",
   })
   List<Pet> findPetsByStatus(@Param("status") List<String> status);
@@ -73,7 +73,7 @@ public interface PetApi extends ApiClient.Api {
    */
   @RequestLine("GET /pet/findByStatus?status={status}")
   @Headers({
-  "Content-Type: application/json",
+  "Content-Type: ",
   "Accept: application/json",
   })
   List<Pet> findPetsByStatus(@QueryMap(encoded=true) Map<String, Object> queryParams);
@@ -97,7 +97,7 @@ public interface PetApi extends ApiClient.Api {
    */
   @RequestLine("GET /pet/findByTags?tags={tags}")
   @Headers({
-    "Content-Type: application/json",
+    "Content-Type: ",
     "Accept: application/json",
   })
   List<Pet> findPetsByTags(@Param("tags") List<String> tags);
@@ -119,7 +119,7 @@ public interface PetApi extends ApiClient.Api {
    */
   @RequestLine("GET /pet/findByTags?tags={tags}")
   @Headers({
-  "Content-Type: application/json",
+  "Content-Type: ",
   "Accept: application/json",
   })
   List<Pet> findPetsByTags(@QueryMap(encoded=true) Map<String, Object> queryParams);
@@ -143,7 +143,7 @@ public interface PetApi extends ApiClient.Api {
    */
   @RequestLine("GET /pet/{petId}")
   @Headers({
-    "Content-Type: application/json",
+    "Content-Type: ",
     "Accept: application/json",
   })
   Pet getPetById(@Param("petId") Long petId);

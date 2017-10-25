@@ -69,7 +69,9 @@ public class PetApi {
     final String[] localVarContentTypes = {
       "application/json", "application/xml"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] { "petstore_auth" };
 
@@ -113,7 +115,9 @@ public class PetApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] { "petstore_auth" };
 
@@ -155,7 +159,9 @@ public class PetApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] { "petstore_auth" };
 
@@ -168,9 +174,8 @@ public class PetApi {
    * @param tags Tags to filter by (required)
    * @return List&lt;Pet&gt;
    * @throws ApiException if fails to make API call
-   * @deprecated
+   * @Deprecated
    */
-  @Deprecated
   public List<Pet> findPetsByTags(List<String> tags) throws ApiException {
     Object localVarPostBody = null;
     
@@ -199,7 +204,9 @@ public class PetApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] { "petstore_auth" };
 
@@ -241,7 +248,9 @@ public class PetApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] { "api_key" };
 
@@ -281,7 +290,9 @@ public class PetApi {
     final String[] localVarContentTypes = {
       "application/json", "application/xml"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] { "petstore_auth" };
 
@@ -328,7 +339,9 @@ if (status != null)
     final String[] localVarContentTypes = {
       "application/x-www-form-urlencoded"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] { "petstore_auth" };
 
@@ -376,7 +389,9 @@ if (file != null)
     final String[] localVarContentTypes = {
       "multipart/form-data"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] { "petstore_auth" };
 

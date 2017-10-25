@@ -67,7 +67,9 @@ public class UserApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -107,7 +109,9 @@ public class UserApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -147,7 +151,9 @@ public class UserApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -188,7 +194,9 @@ public class UserApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -230,7 +238,9 @@ public class UserApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -279,7 +289,9 @@ public class UserApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -313,7 +325,9 @@ public class UserApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -360,7 +374,9 @@ public class UserApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 

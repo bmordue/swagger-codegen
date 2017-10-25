@@ -67,7 +67,9 @@ public class FakeApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -103,7 +105,9 @@ public class FakeApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -139,7 +143,9 @@ public class FakeApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -175,7 +181,9 @@ public class FakeApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -216,7 +224,9 @@ public class FakeApi {
     final String[] localVarContentTypes = {
       "application/json"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -312,7 +322,9 @@ if (paramCallback != null)
     final String[] localVarContentTypes = {
       "application/xml; charset=utf-8", "application/json; charset=utf-8"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] { "http_basic_test" };
 
@@ -367,7 +379,9 @@ if (enumQueryDouble != null)
     final String[] localVarContentTypes = {
       "*/*"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -407,7 +421,9 @@ if (enumQueryDouble != null)
     final String[] localVarContentTypes = {
       "application/json"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -457,7 +473,9 @@ if (param2 != null)
     final String[] localVarContentTypes = {
       "application/json"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 

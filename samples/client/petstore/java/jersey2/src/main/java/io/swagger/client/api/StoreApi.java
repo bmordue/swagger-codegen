@@ -68,7 +68,9 @@ public class StoreApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -103,7 +105,9 @@ public class StoreApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] { "api_key" };
 
@@ -145,7 +149,9 @@ public class StoreApi {
     final String[] localVarContentTypes = {
       
     };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+
+    final String localVarContentType = null;
 
     String[] localVarAuthNames = new String[] {  };
 
@@ -186,7 +192,9 @@ public class StoreApi {
     final String[] localVarContentTypes = {
       
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 

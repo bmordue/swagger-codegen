@@ -68,7 +68,9 @@ public class AnotherFakeApi {
     final String[] localVarContentTypes = {
       "application/json"
     };
+
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
 
     String[] localVarAuthNames = new String[] {  };
 
