@@ -21,10 +21,10 @@ public interface UserApi {
    * Create user
    * This can only be done by the logged in user.
    * @param body Created user object (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @POST("user")
-  Completable createUser(
+  Observable<Void> createUser(
     @retrofit2.http.Body User body
   );
 
@@ -32,10 +32,10 @@ public interface UserApi {
    * Creates list of users with given input array
    * 
    * @param body List of user object (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @POST("user/createWithArray")
-  Completable createUsersWithArrayInput(
+  Observable<Void> createUsersWithArrayInput(
     @retrofit2.http.Body List<User> body
   );
 
@@ -43,10 +43,10 @@ public interface UserApi {
    * Creates list of users with given input array
    * 
    * @param body List of user object (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @POST("user/createWithList")
-  Completable createUsersWithListInput(
+  Observable<Void> createUsersWithListInput(
     @retrofit2.http.Body List<User> body
   );
 
@@ -54,10 +54,10 @@ public interface UserApi {
    * Delete user
    * This can only be done by the logged in user.
    * @param username The name that needs to be deleted (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @DELETE("user/{username}")
-  Completable deleteUser(
+  Observable<Void> deleteUser(
     @retrofit2.http.Path("username") String username
   );
 
@@ -87,10 +87,10 @@ public interface UserApi {
   /**
    * Logs out current logged in user session
    * 
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @GET("user/logout")
-  Completable logoutUser();
+  Observable<Void> logoutUser();
     
 
   /**
@@ -98,10 +98,10 @@ public interface UserApi {
    * This can only be done by the logged in user.
    * @param username name that need to be deleted (required)
    * @param body Updated user object (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @PUT("user/{username}")
-  Completable updateUser(
+  Observable<Void> updateUser(
     @retrofit2.http.Path("username") String username, @retrofit2.http.Body User body
   );
 

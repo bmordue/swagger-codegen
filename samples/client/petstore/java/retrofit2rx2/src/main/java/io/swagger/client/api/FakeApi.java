@@ -96,11 +96,11 @@ public interface FakeApi {
    * @param dateTime None (optional)
    * @param password None (optional)
    * @param paramCallback None (optional)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @retrofit2.http.FormUrlEncoded
   @POST("fake")
-  Completable testEndpointParameters(
+  Observable<Void> testEndpointParameters(
     @retrofit2.http.Field("number") BigDecimal number, @retrofit2.http.Field("double") Double _double, @retrofit2.http.Field("pattern_without_delimiter") String patternWithoutDelimiter, @retrofit2.http.Field("byte") byte[] _byte, @retrofit2.http.Field("integer") Integer integer, @retrofit2.http.Field("int32") Integer int32, @retrofit2.http.Field("int64") Long int64, @retrofit2.http.Field("float") Float _float, @retrofit2.http.Field("string") String string, @retrofit2.http.Field("binary") byte[] binary, @retrofit2.http.Field("date") LocalDate date, @retrofit2.http.Field("dateTime") OffsetDateTime dateTime, @retrofit2.http.Field("password") String password, @retrofit2.http.Field("callback") String paramCallback
   );
 
@@ -115,11 +115,11 @@ public interface FakeApi {
    * @param enumQueryString Query parameter enum test (string) (optional, default to -efg)
    * @param enumQueryInteger Query parameter enum test (double) (optional)
    * @param enumQueryDouble Query parameter enum test (double) (optional)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @retrofit2.http.FormUrlEncoded
   @GET("fake")
-  Completable testEnumParameters(
+  Observable<Void> testEnumParameters(
     @retrofit2.http.Field("enum_form_string_array") List<String> enumFormStringArray, @retrofit2.http.Field("enum_form_string") String enumFormString, @retrofit2.http.Header("enum_header_string_array") List<String> enumHeaderStringArray, @retrofit2.http.Header("enum_header_string") String enumHeaderString, @retrofit2.http.Query("enum_query_string_array") CSVParams enumQueryStringArray, @retrofit2.http.Query("enum_query_string") String enumQueryString, @retrofit2.http.Query("enum_query_integer") Integer enumQueryInteger, @retrofit2.http.Field("enum_query_double") Double enumQueryDouble
   );
 
@@ -127,13 +127,13 @@ public interface FakeApi {
    * test inline additionalProperties
    * 
    * @param param request body (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @Headers({
     "Content-Type:application/json"
   })
   @POST("fake/inline-additionalProperties")
-  Completable testInlineAdditionalProperties(
+  Observable<Void> testInlineAdditionalProperties(
     @retrofit2.http.Body Object param
   );
 
@@ -142,11 +142,11 @@ public interface FakeApi {
    * 
    * @param param field1 (required)
    * @param param2 field2 (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @retrofit2.http.FormUrlEncoded
   @GET("fake/jsonFormData")
-  Completable testJsonFormData(
+  Observable<Void> testJsonFormData(
     @retrofit2.http.Field("param") String param, @retrofit2.http.Field("param2") String param2
   );
 

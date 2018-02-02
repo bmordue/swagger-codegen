@@ -23,13 +23,13 @@ public interface PetApi {
    * Add a new pet to the store
    * 
    * @param body Pet object that needs to be added to the store (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @Headers({
     "Content-Type:application/json"
   })
   @POST("pet")
-  Completable addPet(
+  Observable<Void> addPet(
     @retrofit2.http.Body Pet body
   );
 
@@ -38,10 +38,10 @@ public interface PetApi {
    * 
    * @param petId Pet id to delete (required)
    * @param apiKey  (optional)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @DELETE("pet/{petId}")
-  Completable deletePet(
+  Observable<Void> deletePet(
     @retrofit2.http.Path("petId") Long petId, @retrofit2.http.Header("api_key") String apiKey
   );
 
@@ -84,13 +84,13 @@ public interface PetApi {
    * Update an existing pet
    * 
    * @param body Pet object that needs to be added to the store (required)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @Headers({
     "Content-Type:application/json"
   })
   @PUT("pet")
-  Completable updatePet(
+  Observable<Void> updatePet(
     @retrofit2.http.Body Pet body
   );
 
@@ -100,11 +100,11 @@ public interface PetApi {
    * @param petId ID of pet that needs to be updated (required)
    * @param name Updated name of the pet (optional)
    * @param status Updated status of the pet (optional)
-   * @return Completable
+   * @return Observable&lt;Void&gt;
    */
   @retrofit2.http.FormUrlEncoded
   @POST("pet/{petId}")
-  Completable updatePetWithForm(
+  Observable<Void> updatePetWithForm(
     @retrofit2.http.Path("petId") Long petId, @retrofit2.http.Field("name") String name, @retrofit2.http.Field("status") String status
   );
 

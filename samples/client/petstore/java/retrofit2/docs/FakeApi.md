@@ -242,7 +242,7 @@ No authorization required
 
 <a name="testEndpointParameters"></a>
 # **testEndpointParameters**
-> testEndpointParameters(number, _double, patternWithoutDelimiter, _byte, integer, int32, int64, _float, string, binary, date, dateTime, password, paramCallback)
+> Void testEndpointParameters(number, _double, patternWithoutDelimiter, _byte, integer, int32, int64, _float, string, binary, date, dateTime, password, paramCallback)
 
 Fake endpoint for testing various parameters 假端點 偽のエンドポイント 가짜 엔드 포인트 
 
@@ -280,7 +280,8 @@ OffsetDateTime dateTime = new OffsetDateTime(); // OffsetDateTime | None
 String password = "password_example"; // String | None
 String paramCallback = "paramCallback_example"; // String | None
 try {
-    apiInstance.testEndpointParameters(number, _double, patternWithoutDelimiter, _byte, integer, int32, int64, _float, string, binary, date, dateTime, password, paramCallback);
+    Void result = apiInstance.testEndpointParameters(number, _double, patternWithoutDelimiter, _byte, integer, int32, int64, _float, string, binary, date, dateTime, password, paramCallback);
+    System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling FakeApi#testEndpointParameters");
     e.printStackTrace();
@@ -308,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-null (empty response body)
+[**Void**](.md)
 
 ### Authorization
 
@@ -321,7 +322,7 @@ null (empty response body)
 
 <a name="testEnumParameters"></a>
 # **testEnumParameters**
-> testEnumParameters(enumFormStringArray, enumFormString, enumHeaderStringArray, enumHeaderString, enumQueryStringArray, enumQueryString, enumQueryInteger, enumQueryDouble)
+> Void testEnumParameters(enumFormStringArray, enumFormString, enumHeaderStringArray, enumHeaderString, enumQueryStringArray, enumQueryString, enumQueryInteger, enumQueryDouble)
 
 To test enum parameters
 
@@ -344,7 +345,8 @@ String enumQueryString = "-efg"; // String | Query parameter enum test (string)
 Integer enumQueryInteger = 56; // Integer | Query parameter enum test (double)
 Double enumQueryDouble = 3.4D; // Double | Query parameter enum test (double)
 try {
-    apiInstance.testEnumParameters(enumFormStringArray, enumFormString, enumHeaderStringArray, enumHeaderString, enumQueryStringArray, enumQueryString, enumQueryInteger, enumQueryDouble);
+    Void result = apiInstance.testEnumParameters(enumFormStringArray, enumFormString, enumHeaderStringArray, enumHeaderString, enumQueryStringArray, enumQueryString, enumQueryInteger, enumQueryDouble);
+    System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling FakeApi#testEnumParameters");
     e.printStackTrace();
@@ -366,7 +368,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-null (empty response body)
+[**Void**](.md)
 
 ### Authorization
 
@@ -379,7 +381,7 @@ No authorization required
 
 <a name="testInlineAdditionalProperties"></a>
 # **testInlineAdditionalProperties**
-> testInlineAdditionalProperties(param)
+> Void testInlineAdditionalProperties(param)
 
 test inline additionalProperties
 
@@ -395,7 +397,8 @@ test inline additionalProperties
 FakeApi apiInstance = new FakeApi();
 Object param = null; // Object | request body
 try {
-    apiInstance.testInlineAdditionalProperties(param);
+    Void result = apiInstance.testInlineAdditionalProperties(param);
+    System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling FakeApi#testInlineAdditionalProperties");
     e.printStackTrace();
@@ -410,7 +413,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-null (empty response body)
+[**Void**](.md)
 
 ### Authorization
 
@@ -423,7 +426,7 @@ No authorization required
 
 <a name="testJsonFormData"></a>
 # **testJsonFormData**
-> testJsonFormData(param, param2)
+> Void testJsonFormData(param, param2)
 
 test json serialization of form data
 
@@ -440,7 +443,8 @@ FakeApi apiInstance = new FakeApi();
 String param = "param_example"; // String | field1
 String param2 = "param2_example"; // String | field2
 try {
-    apiInstance.testJsonFormData(param, param2);
+    Void result = apiInstance.testJsonFormData(param, param2);
+    System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling FakeApi#testJsonFormData");
     e.printStackTrace();
@@ -456,7 +460,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-null (empty response body)
+[**Void**](.md)
 
 ### Authorization
 
